@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YachtClubApp.Views.UserInfoPage"
+             Title="Информация обо мне">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="15">
+                <Label Text="Информация обо мне" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" />
+
+                <Label Text="Имя:" />
+                <Entry x:Name="NameEntry" Placeholder="Введите имя" />
+
+                <Label Text="Email:" />
+                <Entry x:Name="EmailEntry" Placeholder="Введите email" Keyboard="Email" />
+
+                <Label Text="Телефон:" />
+                <Entry x:Name="PhoneEntry" Placeholder="Введите телефон" Keyboard="Telephone" />
+
+                <Button Text="Сохранить" Clicked="OnSaveButtonClicked" />
+
+                <BoxView HeightRequest="1" Color="Gray" />
+
+                <Label Text="Сохраненная информация:" FontAttributes="Bold" />
+                <Label x:Name="SavedInfoLabel" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

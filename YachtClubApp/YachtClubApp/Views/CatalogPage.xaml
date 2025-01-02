@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YachtClubApp.Views.CatalogPage"
+             Title="Каталог Яхт">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <ListView x:Name="YachtListView" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10" Orientation="Vertical">
+                                <Image Source="{Binding Image}" 
+                                       HeightRequest="200" 
+                                       Aspect="AspectFill" 
+                                       HorizontalOptions="FillAndExpand"/>
+                                <Label Text="{Binding Name}" 
+                                       FontAttributes="Bold" 
+                                       FontSize="Medium" 
+                                       Margin="0,10,0,0"/>
+                                <Label Text="{Binding Size}" 
+                                       FontSize="Small"/>
+                                <Label Text="{Binding Price}" 
+                                       FontSize="Small" 
+                                       TextColor="Green"/>
+                                <Label Text="{Binding Description}" 
+                                       FontSize="Small" 
+                                       LineBreakMode="WordWrap" 
+                                       Margin="0,5,0,0"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

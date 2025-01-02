@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YachtClubApp.Views.AboutPage"
+             Title="О клубе">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10">
+                <Label Text="О нашем Яхт-клубе" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" />
+                <Label Text="Наш яхт-клуб основан в 1990 году и предлагает лучшие услуги для любителей яхт. Мы предоставляем широкий выбор яхт для аренды, организуем мероприятия и путешествия по красивейшим водам." />
+                <Label Text="Присоединяйтесь к нам и наслаждайтесь морскими приключениями!" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

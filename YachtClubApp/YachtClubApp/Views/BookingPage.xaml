@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YachtClubApp.Views.BookingPage"
+             Title="Бронирование Яхты">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="15">
+                <Label Text="Выберите Яхту:" />
+                <Picker x:Name="YachtPicker" Title="--Выберите--" />
+
+                <Label Text="Ваше имя:" />
+                <Entry x:Name="NameEntry" Placeholder="Введите имя" />
+
+                <Label Text="Email:" />
+                <Entry x:Name="EmailEntry" Placeholder="Введите email" Keyboard="Email" />
+
+                <Label Text="Дата бронирования:" />
+                <DatePicker x:Name="DatePicker" />
+
+                <Button Text="Забронировать" Clicked="OnBookButtonClicked" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
